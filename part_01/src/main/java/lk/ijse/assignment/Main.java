@@ -1,4 +1,4 @@
-package org.example;
+package lk.ijse.assignment;
 
 public class Main {
     public static void main(String[] args) {
