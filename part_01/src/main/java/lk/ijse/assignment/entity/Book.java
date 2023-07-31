@@ -7,13 +7,15 @@ import jakarta.persistence.Id;
 public class Book {
 
     @Id
-    private int id;
+    private String id;
     private  String name;
+    private String author;
     private String publisher;
 
-    public Book(int id, String name, String publisher) {
+    public Book(String id, String name, String author, String publisher) {
         this.id = id;
         this.name = name;
+        this.author = author;
         this.publisher = publisher;
     }
 
@@ -21,11 +23,11 @@ public class Book {
 
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -35,6 +37,14 @@ public class Book {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAuthor(){
+        return author;
+    }
+
+    public void setAuthor(String author){
+        this.author =author;
     }
 
     public String getPublisher() {
