@@ -6,7 +6,6 @@ import org.hibernate.Transaction;
 import java.util.Scanner;
 
 public class Main {
-
     static Scanner scanner = new Scanner(System.in);
     static Session session = FactoryConfiguration.getInstance().getSession();
     static Transaction transaction = session.beginTransaction();

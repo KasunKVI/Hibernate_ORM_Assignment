@@ -15,9 +15,7 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
     static Session session = FactoryConfiguration.getInstance().getSession();
     static Transaction transaction = session.beginTransaction();
-
     static List<Book> books =  new ArrayList<>();
-
     public static void main(String[] args) {
 
         System.out.println("\n--- Book Management System ---");
