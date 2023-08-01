@@ -16,7 +16,7 @@ public class Main {
     static Session session = FactoryConfiguration.getInstance().getSession();
     static Transaction transaction = session.beginTransaction();
 
-    static List<Book> books =  new ArrayList<>();;
+    static List<Book> books =  new ArrayList<>();
 
     public static void main(String[] args) {
 
